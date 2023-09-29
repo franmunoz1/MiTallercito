@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+img, video{
+    max-width: 100%;
+}
+
 /* Fuente de texto */
 
 html{
