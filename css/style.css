@@ -161,6 +161,10 @@ footer{
     .contenedor-inicio{
         display: flex;
         flex-direction: row;
+        width: 100%;
+    }
+    .contenedor-inicio section{
+        width: 50%;
     }
 
 }
