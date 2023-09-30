@@ -1,40 +1,19 @@
-/* Reseteo css */
+/* Reseteo de css */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-img, video{
-    max-width: 100%;
-}
-
-/* Fuente de texto */
-
-html{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Colores de fondo */
-
-header{
-    background-color: antiquewhite;
-    padding: 20px;
-}
-
-body{
-    background-color: aliceblue;
-}
-
-/* Barra de navegacion */
-
-nav ul li{
-    display: inline-block;
-    text-decoration: none;
-}
-
-li{
+ul,ol{
     list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
 }
 
 a{
@@ -42,208 +21,292 @@ a{
     color: black;
 }
 
-.barra-navegacion{
-    display: flex;
-    gap: 20px;
+ul li a:hover{
+    text-decoration: underline;
 }
 
-.icono{
-    width: 100px;
-    height: 100px;
+img, video{
+    max-width: 100%;
+}
+
+/* Estilos del header */
+
+header{
+    background-color:antiquewhite;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .navbar{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
 }
 
-/* Footer */
+.barra-navegacion{
+    text-align: left;
+}
 
+.icono{
+    width: 120px;
+    height: 120px;
+}
+
+@media (min-width:768px){
+    .nav-list{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* Estilos del footer */
 footer{
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: space-around;
+    background-color:antiquewhite;
+    padding: 1rem;
+    text-align: center;
 }
 
-footer div{
-    margin: 10px;
-}
-
-.contacto{
+.contenedor-footer{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .derechos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
+    gap: 20px;
 }
 
-.redes{
+.sobre-nosotros{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* justify-content: center; */
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .footer-redes{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+@media (min-width:768px){
+    .contenedor-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .derechos{
+        align-self: center;
+    }
 }
 
 
+/* Estilos de inicio */
+.contenedor-inicio{
+    display: flex;
+    flex-direction: column;
 
-/*Estilos de index*/
-
-.presentacion{
-    border: 2px solid;
-}
-
-.presentacion a{
-    border: solid 1px black;
-    background-color: aliceblue;
-    border-radius: 5px;
-    padding: 3px;
-    margin: 5px;
-    display: inline-block;
 }
 
 .index-catalogo{
-    padding: 16px;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.index-catalogo a{
+    background-color: coral;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    align-self: center;
 }
 
 .index-clases{
-    padding: 16px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-}
-
-.info-index{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
 }
 
-
-
-/*Estilos de catalogo*/
-
-.articulos{
-    padding: 20px;
-}
-
-.catalogos img{
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-}
-
-.catalogos{
-    border: 2px solid;
-    margin: 10px;
-}
-
-.articulos{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-span{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.catalogos article{
-    padding: 20px;
-}
-
-.articulos article{
-    border: solid 1px black;
+.index-clases a{
+    background-color: coral;
+    border: 1px solid black;
     border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    align-self: center;
 }
 
-/*Estilos de clases*/
+@media (min-width:768px){
+    .contenedor-inicio{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+/* Estilos de catalogo */
+.contenedor-catalogo{
+    padding: 1rem;
+}
+
+.articulos{
+    display: grid;
+    grid-template-areas: 
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "articulo4";
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.articulo1{
+    grid-area: articulo1;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.articulo2{
+    grid-area: articulo2;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.articulo3{
+    grid-area: articulo3;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.articulo4{
+    grid-area: articulo4;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.precio{
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .articulo1:hover{
+    background-color: red;
+} */
+
+@media (min-width:768px) {
+    .articulos{
+        display: grid;
+        grid-template-areas: 
+        "articulo1 articulo2"
+        "articulo3 articulo4";
+    }
+}
+
+@media (min-width:1200px){
+    .articulos{
+        display: grid;
+        grid-template-areas: 
+        "articulo1 articulo2 articulo3 articulo4";
+    }
+}
+
+
+/* Estilos de clases */
+
+.contenedor-clases{
+    padding: 1rem;
+}
 
 .seccion-clases{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .clase-normal, .clase-personalizada{
-    margin: 20px;
-    padding: 20px;
-    border: solid 1px black;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-/*Estilos de contacto*/
+@media (min-width:768px){
+    .seccion-clases{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+}
+
+/* Estilos de contacto */
+.contenedor-formulario{
+    padding: 1rem;
+}
 
 .formulario{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
 
+/* Estilos de nosotros */
+.contenedor-nosotros{
+    padding: 1rem;
+}
 
-/*Estilo de nosotros*/
 .nosotros{
-    padding: 20px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .nosotros-primero, .nosotros-segundo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nosotros video, img{
-    height: 500px;
-}
-
-.nosotros{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
 }
 
 .fotos-nosotros{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.fotos-nosotros img{
-    width: 300px;
-    height: 300px;
+@media (min-width:768px){
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fotos-nosotros{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+    }
 }
 
-    
+
+
 
 
