@@ -108,7 +108,7 @@ footer{
     .contenedor-footer{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .derechos{
         align-self: center;
