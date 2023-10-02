@@ -121,6 +121,7 @@ footer{
 
 
 /* Estilos de inicio */
+
 /* .header{
     position: sticky;
     top: 0;
@@ -165,6 +166,8 @@ footer{
     height: 25px;
     align-self: center;
 }
+
+
 
 @media (min-width:768px){
     .contenedor-inicio{
@@ -271,6 +274,11 @@ footer{
     text-align: center;
     gap: 1rem;
     padding: 1rem;
+}
+
+.seccion-clases img{
+    height: 100%;
+    width: 100%;
 }
 
 @media (min-width:768px){
