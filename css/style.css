@@ -168,11 +168,11 @@ footer{
 }
 
 .presentacion img{
-    height: 100%;
+    height: 80%;
 }
 
 .presentacion article{
-    height: 500px;
+    height: 550px;
     overflow: hidden;
     margin-bottom: 30px;
 }
