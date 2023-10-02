@@ -167,7 +167,15 @@ footer{
     align-self: center;
 }
 
+.presentacion img{
+    height: 100%;
+}
 
+.presentacion article{
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
 
 @media (min-width:768px){
     .contenedor-inicio{
