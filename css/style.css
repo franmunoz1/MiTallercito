@@ -197,10 +197,6 @@ footer{
     gap: 1rem;
 }
 
-.articulos article{
-    height: 350px;
-}
-
 .articulos img{
     width: 100%;
     height: 90%;
@@ -238,6 +234,21 @@ footer{
     justify-content: space-between;
 }
 
+.articulos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-catalogo{
+    height: 300px;
+    overflow: hidden;
+}
+
+.catalogos{
+    width: auto;
+}
+
 
 @media (min-width:768px) {
     .articulos{
@@ -246,6 +257,7 @@ footer{
         "articulo1 articulo2"
         "articulo3 articulo4";
     }
+    
 }
 
 @media (min-width:1200px){
@@ -350,8 +362,3 @@ footer{
 
     }
 }
-
-
-
-
-
