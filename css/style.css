@@ -122,11 +122,6 @@ footer{
 
 /* Estilos de inicio */
 
-/* .header{
-    position: sticky;
-    top: 0;
-} */
-
 .contenedor-inicio{
     display: flex;
     flex-direction: column;
@@ -141,7 +136,7 @@ footer{
     padding: 1rem;
 }
 
-.index-catalogo a{
+.index-catalogo a, .index-clases a{
     background-color: coral;
     border: 1px solid black;
     border-radius: 5px;
@@ -158,21 +153,18 @@ footer{
     padding: 1rem;
 }
 
-.index-clases a{
-    background-color: coral;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 100px;
-    height: 25px;
-    align-self: center;
+.index-catalogo div, .index-clases div{
+    height: 600px;
+    overflow: hidden;
 }
 
-.presentacion img{
-    height: 80%;
+.index-catalogo img, .index-clases img{
+    height: 100%;
+    width: 100%;
 }
 
 .presentacion article{
-    height: 550px;
+    height: 630px;
     overflow: hidden;
     margin-bottom: 30px;
 }
@@ -274,6 +266,7 @@ footer{
 .seccion-clases{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .clase-normal, .clase-personalizada{
@@ -282,12 +275,22 @@ footer{
     text-align: center;
     gap: 1rem;
     padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
 }
 
 .seccion-clases img{
     height: 100%;
     width: 100%;
 }
+
+.clase-normal div, .clase-personalizada div{
+    height: 600px;
+    overflow: hidden;
+}
+
 
 @media (min-width:768px){
     .seccion-clases{
@@ -323,6 +326,9 @@ footer{
 }
 
 .nosotros-primero, .nosotros-segundo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 1rem;
     text-align: center;
 }
