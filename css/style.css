@@ -321,6 +321,14 @@ footer{
     width: 100%;
 }
 
+article a{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 170px;
+    align-self: center;
+    background-color: antiquewhite;
+}
+
 .seccion-clases img{
     height: 100%;
     width: 100%;
@@ -341,6 +349,10 @@ footer{
 }
 
 /* Estilos de contacto */
+
+.contenedor-contacto{
+    padding: 1rem;
+}
 
 .contenedor-formulario{
     padding: 1rem;
