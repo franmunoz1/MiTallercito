@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Estilos-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/icon.jpg">
@@ -16,23 +18,33 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div>
-                <a href="../index.html"><img src="../img/icon.jpg" alt="" class="icono"></a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid contenedor-header d-flex">
+              <a class="navbar-brand icono" href="../index.html"><img src="../img/icon.jpg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navbar-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-menu barra-navegacion w-100 justify-content-end navbar-menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./catalogo.html">Catalogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./clases.html">Clases</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="barra-navegacion">
-                <nav>
-                    <ul class="nav-list">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./catalogo.html">Catalogo</a></li>
-                        <li><a href="./clases.html">Clases</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
+          </nav>
     </header>
 
     <main>
@@ -45,7 +57,6 @@
                     <video src="../img/videosole.mp4" muted autoplay></video>
                     <p>Nosotros, como familia, nos dedicamos a la restauracion, recuperacion y decoracion de tus muebles preferidos</p>
                 </article>
-                <hr>
                 <article class="nosotros-segundo">
                     <p>Ademas, tambien pensamos en nuestros pequeños mas queridos, fabricando muebles para todos los gustos de ellos</p>
                     <img src="../img/sole3.jpeg" alt="foto creadora mi tallercito">
@@ -53,16 +64,38 @@
             </section>
         </div>
 
-        
-        <!--Carussel de fotos-->
-        <div class="fotos-nosotros">
-            <img src="../img/bancos.jpg" alt="bancos para sentarse decorados">
-            <img src="../img/baul_cajon.jpeg" alt="cajon para guardar cosas decorado">
-            <img src="../img/mesa_cajon.jpg" alt="mesa y cajon para nene">
-            <img src="../img/mesaluz.jpeg" alt="">
-            <!--<img src="../img/ropero.jpg" alt="">-->
-            <!--<img src="../img/casita.jpg" alt="">-->
-        </div>
+        <!-- Carrusel de fotos en bootstrap -->
+        <div id="carousel" class="carousel slide p-lg-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/bancos.jpg" class="d-block w-100" alt="bancos para ninos">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/baul_cajon.jpeg" class="d-block w-100" alt="cajon para ninos">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/mesa_cajon.jpg" class="d-block w-100" alt="mesa y cajon para ninos">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/casita.jpg" class="d-block w-100" alt="casita para ninos">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/cocina.jpg" class="d-block w-100" alt="cocina ficticia para ninos">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/mesa_silla.jpg" class="d-block w-100" alt="mesa y silla para ninos">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
 
     </main>
 
@@ -70,7 +103,7 @@
         <div class="contenedor-footer">
             <div class="derechos">
                 <p>Derechos de autor</p>
-                <p>Politicas</p>
+                <p>Políticas</p>
             </div>
             
             <hr>
@@ -107,5 +140,6 @@
 
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

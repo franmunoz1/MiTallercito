@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Estilos-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/icon.jpg">
@@ -16,57 +18,67 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div>
-                <a href="../index.html"><img src="../img/icon.jpg" alt="" class="icono"></a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid contenedor-header d-flex">
+              <a class="navbar-brand icono" href="../index.html"><img src="../img/icon.jpg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navbar-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-menu barra-navegacion w-100 justify-content-end navbar-menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./catalogo.html">Catalogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./clases.html">Clases</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="barra-navegacion">
-                <nav>
-                    <ul class="nav-list">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./catalogo.html">Catalogo</a></li>
-                        <li><a href="./clases.html">Clases</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-    </header>
+          </nav>
+    </header>  
 
     <main>
 
+      <div class="contenedor-contacto">
+        <h2>Contactanos:</h2>
+      </div>
+
         <div class="contenedor-formulario">
-            <h2>Completa tus datos para contactarnos:</h2>
-            
-            <div>
-                <form method="post" class="formulario">
-                    <div>
-                        <label for="nombre">Nombre: </label>
-                        <input type="text" name="Nombre" id="nombre" placeholder="Nombre">
-                    </div>
-                    <div>
-                        <label for="telefono">Telefono:</label>
-                        <input type="tel" name="Telefono" id="telefono" placeholder="Telefono">
-                    </div>
-                    <div>
-                        <label for="mail">Mail: </label>
-                        <input type="email" name="Mail" id="mail" placeholder="Email">
-                    </div>
-                    <div>
-                        <label for="pais">Pais de residencia: </label>
-                        <input type="text" name="pais" id="pais" placeholder="Pais de origen">
-                    </div>
-                    <div>
-                        <label for="motivo">Motivo: </label>
-                        <textarea id="motivo" cols="30" rows="10" placeholder="Motivo de contacto"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
-            </div>
+            <form class="col-md-6 offset-md-3">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Telefono</label>
+                  <input type="tel" class="form-control" id="telefono">
+                </div>
+                <div class="mb-3">
+                    <label for="mail" class="form-label">Mail</label>
+                    <input type="email" class="form-control" id="mail">
+                </div>
+                <div class="mb-3">
+                    <label for="pais" class="form-label">Pais de origen</label>
+                    <input type="text" class="form-control" id="pais">
+                </div>
+                <div class="mb-3">
+                    <label for="motivo" class="form-label">Motivo de contacto</label>
+                    <input type="text" class="form-control" id="motivo">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary mx-auto btn-formulario">Enviar</button>
+                </div>
+            </form>
         </div>
 
     </main>
@@ -75,7 +87,7 @@
         <div class="contenedor-footer">
             <div class="derechos">
                 <p>Derechos de autor</p>
-                <p>Politicas</p>
+                <p>Políticas</p>
             </div>
             
             <hr>
@@ -112,5 +124,6 @@
 
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
