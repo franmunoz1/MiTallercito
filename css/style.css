@@ -33,7 +33,9 @@ img{
     object-fit: cover;
 }
 
+
 /* Estilos del header */
+
 
 header{
     background-color:antiquewhite;
@@ -59,22 +61,15 @@ header{
     text-align: right;
 }
 
-
 .icono{
     width: 120px;
     height: 120px;
 }
 
 
-
-@media (min-width:768px){
-    .nav-list{
-        display: flex;
-        gap: 20px;
-    }
-}
-
 /* Estilos del footer */
+
+
 footer{
     background-color:antiquewhite;
     padding: 1rem;
@@ -124,6 +119,8 @@ footer{
     padding: 0;
 }
 
+/* Responsive del footer */
+
 @media (min-width:768px){
     .contenedor-footer{
         display: flex;
@@ -138,13 +135,13 @@ footer{
 
 /* Estilos de inicio */
 
+
 .contenedor-inicio{
     display: flex;
     flex-direction: column;
-
 }
 
-.index-catalogo{
+.index-catalogo, .index-clases{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -159,14 +156,6 @@ footer{
     width: 100px;
     height: 25px;
     align-self: center;
-}
-
-.index-clases{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    padding: 1rem;
 }
 
 .index-catalogo div, .index-clases div{
@@ -185,6 +174,8 @@ footer{
     margin-bottom: 30px;
 }
 
+/* Responsive de la pagina de inicio */
+
 @media (min-width:768px){
     .contenedor-inicio{
         display: flex;
@@ -197,7 +188,10 @@ footer{
 
 }
 
+
 /* Estilos de catalogo */
+
+
 .contenedor-catalogo{
     padding: 1rem;
 }
@@ -277,6 +271,7 @@ footer{
     width: auto;
 }
 
+/* Responsive de la pagina catalogo */
 
 @media (min-width:768px) {
     .articulos{
@@ -297,7 +292,9 @@ footer{
 }
 
 
+
 /* Estilos de clases */
+
 
 .titulo-clases{
     padding: 1rem;
@@ -346,6 +343,7 @@ article a{
     overflow: hidden;
 }
 
+/* Responsive de la pagina de clases */
 
 @media (min-width:768px){
     .seccion-clases{
@@ -355,16 +353,12 @@ article a{
     }
 }
 
+
 /* Estilos de contacto */
 
-.contenedor-contacto{
+.contenedor-contacto, .contenedor-formulario{
     padding: 1rem;
 }
-
-.contenedor-formulario{
-    padding: 1rem;
-}
-
 
 .formulario{
     display: flex;
@@ -385,7 +379,9 @@ article a{
     color: black;
 }
 
+
 /* Estilos de nosotros */
+
 .contenedor-nosotros{
     padding: 1rem;
 }
@@ -413,6 +409,8 @@ article a{
 .carousel{
     padding: 2rem;
 }
+
+/* Responsive de la pagina nosotros */
 
 @media (min-width:768px){
     .nosotros{
