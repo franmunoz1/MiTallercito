@@ -198,6 +198,10 @@ footer{
 }
 
 /* Estilos de catalogo */
+.titulo-productos{
+    padding: 1rem;
+}
+
 .contenedor-catalogo{
     padding: 1rem;
 }
@@ -386,6 +390,10 @@ article a{
 }
 
 /* Estilos de nosotros */
+.titulo-nosotros{
+    padding: 1rem;
+}
+
 .contenedor-nosotros{
     padding: 1rem;
 }
