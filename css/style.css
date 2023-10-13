@@ -414,6 +414,33 @@ article a{
     padding: 2rem;
 }
 
+.contenedor-opiniones{
+    padding: 1rem;
+}
+
+.img-cliente{
+    height: 100px;
+    width: 100px;
+}
+
+.opiniones-clientes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.primera-opinion, .segunda-opinion{
+    display: flex;
+    gap: 2rem;
+    max-height: 400px;
+}
+
+.opinion{
+    align-self: center;
+}
+
 @media (min-width:768px){
     .nosotros{
         display: flex;
