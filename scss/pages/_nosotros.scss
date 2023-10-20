@@ -3,15 +3,15 @@
 }
 
 .seccionnosotros{
-    padding: 1rem;
+    padding: $medida-principal;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: $medida-principal;
     &__primero{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 1rem;
+        padding: $medida-principal;
         text-align: center;
     }
 
@@ -19,7 +19,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 1rem;
+        padding: $medida-principal;
         text-align: center;
     }
 }

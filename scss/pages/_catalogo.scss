@@ -1,10 +1,14 @@
+.contenedorninos, .contenedormuebles{
+    padding: $medida-principal;
+}
+
 .contenedorarticulos{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    gap: 1rem;
+    gap: $medida-principal;
     &__articulo{
-        padding: 1rem;
-        border: 1px solid black;
+        padding: $medida-principal;
+        border: 1px solid $color-secundario;
         border-radius: 8px;
         .articulo__img{
             width: 100%;
@@ -13,7 +17,7 @@
             overflow: hidden;
         }
         .articulo__precio{
-            padding-top: 0.5rem;
+            padding-top: ($medida-principal - 0.5);
             display: inline-block;
             display: flex;
             justify-content: space-between;
@@ -21,6 +25,3 @@
     }
 }
 
-.contenedorninos, .contenedormuebles{
-    padding: 1rem;
-}

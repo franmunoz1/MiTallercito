@@ -118,6 +118,10 @@ footer {
     align-self: center;
   }
 }
+.contenedorninos, .contenedormuebles {
+  padding: 1rem;
+}
+
 .contenedorarticulos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -139,10 +143,6 @@ footer {
   display: inline-block;
   display: flex;
   justify-content: space-between;
-}
-
-.contenedorninos, .contenedormuebles {
-  padding: 1rem;
 }
 
 .titulo_clases {

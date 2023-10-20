@@ -1,9 +1,9 @@
 .titulo_clases{
-    padding: 1rem;
+    padding: $medida-principal;
 }
 
 .contenedorclases{
-    padding: 1rem;
+    padding: $medida-principal;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -23,9 +23,9 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
-        padding: 1rem;
-        border: 1px solid black;
+        gap: $medida-principal;
+        padding: $medida-principal;
+        border: 1px solid $color-secundario;
         border-radius: 10px;
         height: 100%;
         width: 100%;
@@ -34,11 +34,11 @@
             overflow: hidden;
         }
         .normal__btn{
-            border: 1px solid black;
+            border: 1px solid $color-secundario;
             border-radius: 10px;
             width: 170px;
             align-self: center;
-            background-color: antiquewhite;
+            background-color: $color-principal;
         }
     }
 
@@ -46,9 +46,9 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
-        padding: 1rem;
-        border: 1px solid black;
+        gap: $medida-principal;
+        padding: $medida-principal;
+        border: 1px solid $color-secundario;
         border-radius: 10px;
         height: 100%;
         width: 100%;
@@ -57,11 +57,11 @@
             overflow: hidden;
         }
         .personalizada__btn{
-            border: 1px solid black;
+            border: 1px solid $color-secundario;
             border-radius: 10px;
             width: 170px;
             align-self: center;
-            background-color: antiquewhite;
+            background-color: $color-principal;
         }
     }
 }
