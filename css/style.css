@@ -81,27 +81,27 @@ footer{
     text-align: center;
 }
 
-.contenedor-footer{
+.contenedorfooter{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.derechos{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: space-around;
-}
-
-.sobre-nosotros{
+.contenedorfooter__derechos{
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: space-around;
 }
 
-.contacto{
+.contenedorfooter__contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.contacto__lista{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -109,14 +109,14 @@ footer{
     padding: 0;
 }
 
-.footer-redes{
+.contenedorfooter__redes{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: space-around;
 }
 
-.redes{
+.redes__lista{
     display: flex;
     justify-content: center;
     justify-content: space-around;
@@ -125,12 +125,12 @@ footer{
 }
 
 @media (min-width:768px){
-    .contenedor-footer{
+    .contenedorfooter{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    .derechos{
+    .contenedorfooter__derechos{
         align-self: center;
     }
 }
@@ -138,13 +138,12 @@ footer{
 
 /* Estilos de inicio */
 
-.contenedor-inicio{
+.contenedorinicio{
     display: flex;
     flex-direction: column;
-
 }
 
-.index-catalogo{
+.presentacion__catalogo{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -152,7 +151,7 @@ footer{
     padding: 1rem;
 }
 
-.index-catalogo a, .index-clases a{
+.presentacion__catalogo a, .presentacion__clases a{
     background-color: antiquewhite;
     border: 1px solid black;
     border-radius: 5px;
@@ -161,7 +160,7 @@ footer{
     align-self: center;
 }
 
-.index-clases{
+.presentacion__clases{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -169,29 +168,29 @@ footer{
     padding: 1rem;
 }
 
-.index-catalogo div, .index-clases div{
+.presentacion__catalogo div, .presentacion__clases div{
     height: 600px;
     overflow: hidden;
 }
 
-.index-catalogo img, .index-clases img{
+.presentacion__catalogo img, .presentacion__clases img{
     height: 100%;
     width: 100%;
 }
 
-.presentacion article{
+.contenedorinicio__presentacion article{
     height: 630px;
     overflow: hidden;
     margin-bottom: 30px;
 }
 
 @media (min-width:768px){
-    .contenedor-inicio{
+    .contenedorinicio{
         display: flex;
         flex-direction: row;
         width: 100%;
     }
-    .contenedor-inicio section{
+    .contenedorinicio section{
         width: 50%;
     }
 
@@ -202,11 +201,11 @@ footer{
     padding: 1rem;
 }
 
-.contenedor-catalogo{
+.contenedorcatalogo{
     padding: 1rem;
 }
 
-.articulos{
+.ninos__articulos, .muebles__articulos{
     display: grid;
     grid-template-areas: 
     "articulo1"
@@ -217,7 +216,7 @@ footer{
     gap: 1rem;
 }
 
-.articulos img{
+.ninos__articulos img, .muebles__articulos img{
     width: 100%;
     height: 90%;
     object-fit: cover;
@@ -266,24 +265,24 @@ footer{
     justify-content: space-between;
 }
 
-.articulos img{
+.ninos__articulos img, .muebles__articulos img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.img-catalogo{
+.articulos__img{
     height: 300px;
     overflow: hidden;
 }
 
-.catalogos{
+.contenedorcatalogo__ninos, .contenedorcatalogo__muebles{
     width: auto;
 }
 
 
 @media (min-width:768px) {
-    .articulos{
+    .ninos__articulos, .muebles__articulos{
         display: grid;
         grid-template-areas: 
         "articulo1 articulo2"
@@ -293,7 +292,7 @@ footer{
 }
 
 @media (min-width:1200px){
-    .articulos{
+    .ninos__articulos, .muebles__articulos{
         display: grid;
         grid-template-areas: 
         "articulo1 articulo2 articulo3 articulo4";
@@ -307,20 +306,20 @@ footer{
     padding: 1rem;
 }
 
-.contenedor-clases{
+.contenedorclases{
     padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.seccion-clases{
+.contenedorclases__seccion{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.clase-normal, .clase-personalizada{
+.seccion__normal, .seccion__personalizada{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -332,7 +331,7 @@ footer{
     width: 100%;
 }
 
-article a{
+.normal__btn, .personalizada__btn{
     border: 1px solid black;
     border-radius: 10px;
     width: 170px;
@@ -340,19 +339,19 @@ article a{
     background-color: antiquewhite;
 }
 
-.seccion-clases img{
+.contenedorclases__seccion img{
     height: 100%;
     width: 100%;
 }
 
-.clase-normal div, .clase-personalizada div{
+.seccion__normal div, .seccion__personalizada div{
     height: 600px;
     overflow: hidden;
 }
 
 
 @media (min-width:768px){
-    .seccion-clases{
+    .contenedorclases__seccion{
         display: flex;
         flex-direction: row;
         align-items: end;
@@ -361,29 +360,21 @@ article a{
 
 /* Estilos de contacto */
 
-.contenedor-contacto{
+.contenedorcontacto{
     padding: 1rem;
 }
 
-.contenedor-formulario{
+.contenedorcontacto__formulario{
     padding: 1rem;
 }
 
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-}
-
-.btn-formulario{
+.formulario__btn{
     background-color: antiquewhite;
     border: 1px solid black;
     color: black;
 }
 
-.btn-formulario:hover{
+.formulario__btn:hover{
     background-color: antiquewhite;
     border: 1px solid black;
     color: black;
@@ -394,18 +385,14 @@ article a{
     padding: 1rem;
 }
 
-.contenedor-nosotros{
-    padding: 1rem;
-}
-
-.nosotros{
+.seccionnosotros{
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.nosotros-primero, .nosotros-segundo{
+.seccionnosotros__primero, .seccionnosotros__segundo{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -413,16 +400,11 @@ article a{
     text-align: center;
 }
 
-.fotos-nosotros{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 .carousel{
     padding: 2rem;
 }
 
-.contenedor-opiniones{
+.contenedoropiniones{
     padding: 1rem;
 }
 
@@ -431,7 +413,7 @@ article a{
     width: 100px;
 }
 
-.opiniones-clientes{
+.contenedoropiniones__clientes{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -439,26 +421,21 @@ article a{
     padding: 2rem;
 }
 
-.primera-opinion, .segunda-opinion{
+.clientes__primera, .clientes__segunda{
     display: flex;
     gap: 2rem;
     max-height: 400px;
 }
 
-.opinion{
+.primera__opinion, .segunda__opinion{
     align-self: center;
 }
 
 @media (min-width:768px){
-    .nosotros{
+    .seccionnosotros{
         display: flex;
         flex-direction: row;
     }
 
-    .fotos-nosotros{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-
-    }
 }
 
