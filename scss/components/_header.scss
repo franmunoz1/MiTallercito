@@ -1,0 +1,38 @@
+header{
+    background-color:antiquewhite;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.barra-navegacion{
+    text-align: left;
+    
+}
+
+.navbar-menu{
+    text-align: right;
+}
+
+
+.icono{
+    width: 120px;
+    height: 120px;
+}
+
+
+
+@media (min-width:768px){
+    .nav-list{
+        display: flex;
+        gap: 20px;
+    }
+}

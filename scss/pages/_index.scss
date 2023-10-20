@@ -1,0 +1,73 @@
+.contenedorinicio{
+    display: flex;
+    flex-direction: column;
+    &__presentacion{
+        article{
+            height: 630px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.presentacion{
+    &__catalogo{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+        a{
+            background-color: antiquewhite;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 100px;
+            height: 25px;
+            align-self: center;
+        }
+        div{
+            height: 600px;
+            overflow: hidden;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__clases{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+        a{
+            background-color: antiquewhite;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 100px;
+            height: 25px;
+            align-self: center;
+        }
+        div{
+            height: 600px;
+            overflow: hidden;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width:768px){
+    .contenedorinicio{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .contenedorinicio section{
+        width: 50%;
+    }
+
+}
