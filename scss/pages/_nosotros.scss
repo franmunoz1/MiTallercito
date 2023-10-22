@@ -30,11 +30,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
-        padding: 2rem;
+        gap: ($medida-principal * 2);
+        padding: ($medida-principal * 2);
         .clientes__primera{
             display: flex;
-            gap: 2rem;
+            gap: ($medida-principal * 2);
             max-height: 400px;
             .primera__opinion{
                 align-self: center;
@@ -42,7 +42,7 @@
         }
         .clientes__segunda{
             display: flex;
-            gap: 2rem;
+            gap: ($medida-principal * 2);
             max-height: 400px;
             .segunda__opinion{
                 align-self: center;

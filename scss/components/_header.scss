@@ -1,8 +1,8 @@
 header{
     background-color:antiquewhite;
-    padding: 1rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: $medida-principal;
+    padding-left: ($medida-principal * 5);
+    padding-right: ($medida-principal * 5);
 }
 
 .navbar{
@@ -10,7 +10,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: $color-principal;
 }
 
 .barra-navegacion{
