@@ -1,0 +1,16 @@
+.contenedorcontacto{
+    padding: $medida-principal;
+    &__formulario{
+        padding: $medida-principal;
+        .formulario__btn{
+            background-color: $color-principal;
+            border: 1px solid $color-secundario;
+            color: $color-secundario;
+        }
+        .formulario__btn:hover{
+            background-color: $color-principal;
+            border: 1px solid $color-secundario;
+            color: $color-secundario;
+        }
+    }
+}
