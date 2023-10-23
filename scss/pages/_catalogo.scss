@@ -10,6 +10,10 @@
         padding: $medida-principal;
         border: 1px solid $color-secundario;
         border-radius: 8px;
+        transition: box-shadow 0.5s;
+        &:hover{
+            box-shadow: 0 0 $medida-principal #515151;
+        }
         .articulo__img{
             width: 100%;
             height: 200px;

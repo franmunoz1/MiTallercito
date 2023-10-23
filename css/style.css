@@ -131,6 +131,10 @@ footer {
   padding: 1rem;
   border: 1px solid black;
   border-radius: 8px;
+  transition: box-shadow 0.5s;
+}
+.contenedorarticulos__articulo:hover {
+  box-shadow: 0 0 1rem #515151;
 }
 .contenedorarticulos__articulo .articulo__img {
   width: 100%;
