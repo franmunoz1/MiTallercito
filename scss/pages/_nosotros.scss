@@ -8,24 +8,18 @@
     gap: $medida-principal;
 
     @include mq-tablet {
-        display: flex;
-        flex-direction: row;
+        @include flexbox(row);
     }
 
     &__primero {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column);
         gap: 20px;
         padding: $medida-principal;
         text-align: center;
     }
 
     &__segundo {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: $medida-principal;
-        text-align: center;
+        @extend .seccionnosotros__primero;
     }
 }
 
@@ -60,7 +54,7 @@
     }
 }
 
-.img-cliente img {
+.img-cliente {
     height: 100px;
     width: 100px;
 }
