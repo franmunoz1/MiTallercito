@@ -1,25 +1,35 @@
-footer{
+footer {
     background-color: $color-principal;
     padding: $medida-principal;
     text-align: center;
 }
 
-.contenedorfooter{
-    display: flex;
-    flex-direction: column;
+.contenedorfooter {
+    @include flexbox(column);
     gap: 20px;
-    &__derechos{
+
+    @include mq-tablet {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
         justify-content: space-around;
     }
-    &__contacto{
-        display: flex;
-        flex-direction: column;
+
+    &__derechos {
+        @include flexbox(column);
         gap: 20px;
         justify-content: space-around;
-        .contacto__lista{
+
+        @include mq-tablet {
+            align-self: center;
+        }
+    }
+
+    &__contacto {
+        @include flexbox(column);
+        gap: 20px;
+        justify-content: space-around;
+
+        .contacto__lista {
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -27,28 +37,18 @@ footer{
             padding: 0;
         }
     }
-    &__redes{
-        display: flex;
-        flex-direction: column;
+
+    &__redes {
+        @include flexbox(column);
         gap: 1rem;
         justify-content: space-around;
-        .redes__lista{
+
+        .redes__lista {
             display: flex;
             justify-content: center;
             justify-content: space-around;
             margin: 0;
             padding: 0;
         }
-    }
-}
-
-@media (min-width:768px){
-    .contenedorfooter{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .contenedorfooter__derechos{
-        align-self: center;
     }
 }

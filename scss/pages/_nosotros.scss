@@ -1,64 +1,66 @@
-.titulo-nosotros{
+.titulo-nosotros {
     padding: $medida-principal;
 }
 
-.seccionnosotros{
+.seccionnosotros {
     padding: $medida-principal;
-    display: flex;
-    flex-direction: column;
+    @include flexbox(column);
     gap: $medida-principal;
-    &__primero{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: $medida-principal;
-        text-align: center;
-    }
 
-    &__segundo{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: $medida-principal;
-        text-align: center;
-    }
-}
-
-.contenedoropiniones{
-    padding: $medida-principal;
-    &__clientes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: ($medida-principal * 2);
-        padding: ($medida-principal * 2);
-        .clientes__primera{
-            display: flex;
-            gap: ($medida-principal * 2);
-            max-height: 400px;
-            .primera__opinion{
-                align-self: center;
-            }
-        }
-        .clientes__segunda{
-            display: flex;
-            gap: ($medida-principal * 2);
-            max-height: 400px;
-            .segunda__opinion{
-                align-self: center;
-            }
-        }
-    }
-}
-
-.img-cliente img{
-    height: 100px;
-    width: 100px;
-}
-
-@media (min-width:768px){
-    .seccionnosotros{
+    @include mq-tablet {
         display: flex;
         flex-direction: row;
     }
+
+    &__primero {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: $medida-principal;
+        text-align: center;
+    }
+
+    &__segundo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: $medida-principal;
+        text-align: center;
+    }
+}
+
+.contenedoropiniones {
+    padding: $medida-principal;
+
+    &__clientes {
+        @include flexbox(column);
+        align-items: center;
+        gap: ($medida-principal * 2);
+        padding: ($medida-principal * 2);
+
+        .clientes__primera {
+            display: flex;
+            gap: ($medida-principal * 2);
+            max-height: 400px;
+
+            .primera__opinion {
+                align-self: center;
+            }
+        }
+
+        .clientes__segunda {
+            display: flex;
+            gap: ($medida-principal * 2);
+            max-height: 400px;
+
+            .segunda__opinion {
+                align-self: center;
+            }
+        }
+    }
+}
+
+.img-cliente img {
+    height: 100px;
+    width: 100px;
 }

@@ -1,27 +1,31 @@
-.titulo_clases{
+.titulo-clases {
     padding: $medida-principal;
 }
 
-.contenedorclases{
+.contenedorclases {
     padding: $medida-principal;
-    display: flex;
-    flex-direction: row;
+    @include flexbox(row);
     justify-content: center;
-    &__seccion{
-        display: flex;
-        flex-direction: column;
+
+    &__seccion {
+        @include flexbox(column);
         gap: 20px;
-        img{
+
+        @include mq-desktop {
+            @include flexbox(row);
+            align-items: end;
+        }
+
+        img {
             height: 100%;
             width: 100%;
         }
     }
 }
 
-.seccion{
-    &__normal{
-        display: flex;
-        flex-direction: column;
+.seccion {
+    &__normal {
+        @include flexbox(column);
         text-align: center;
         gap: $medida-principal;
         padding: $medida-principal;
@@ -29,22 +33,28 @@
         border-radius: 10px;
         height: 100%;
         width: 100%;
-        div{
+
+        div {
             height: 600px;
             overflow: hidden;
         }
-        .normal__btn{
+
+        .normal__btn {
             border: 1px solid $color-secundario;
             border-radius: 10px;
             width: 170px;
             align-self: center;
             background-color: $color-principal;
+            transition: box-shadow 0.5s;
+
+            &:hover {
+                box-shadow: 0 0 $medida-principal #515151;
+            }
         }
     }
 
-    &__personalizada{
-        display: flex;
-        flex-direction: column;
+    &__personalizada {
+        @include flexbox(column);
         text-align: center;
         gap: $medida-principal;
         padding: $medida-principal;
@@ -52,25 +62,23 @@
         border-radius: 10px;
         height: 100%;
         width: 100%;
-        div{
+
+        div {
             height: 600px;
             overflow: hidden;
         }
-        .personalizada__btn{
+
+        .personalizada__btn {
             border: 1px solid $color-secundario;
             border-radius: 10px;
             width: 170px;
             align-self: center;
             background-color: $color-principal;
+            transition: box-shadow 0.5s;
+
+            &:hover {
+                box-shadow: 0 0 $medida-principal #515151;
+            }
         }
-    }
-}
-
-
-@media (min-width:768px){
-    .contenedorclases__seccion{
-        display: flex;
-        flex-direction: row;
-        align-items: end;
     }
 }
