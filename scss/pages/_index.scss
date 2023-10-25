@@ -28,20 +28,6 @@
         text-align: center;
         padding: $medida-principal;
 
-        a {
-            background-color: $color-principal;
-            border: 1px solid $color-secundario;
-            border-radius: 5px;
-            width: 100px;
-            height: 25px;
-            align-self: center;
-            transition: box-shadow 0.5s;
-
-            &:hover {
-                box-shadow: 0 0 $medida-principal #515151;
-            }
-        }
-
         div {
             height: 600px;
             overflow: hidden;
@@ -58,20 +44,6 @@
         gap: $medida-principal;
         text-align: center;
         padding: $medida-principal;
-
-        a {
-            background-color: $color-principal;
-            border: 1px solid $color-secundario;
-            border-radius: 5px;
-            width: 100px;
-            height: 25px;
-            align-self: center;
-            transition: box-shadow 0.5s;
-
-            &:hover {
-                box-shadow: 0 0 $medida-principal #515151;
-            }
-        }
 
         div {
             height: 600px;
