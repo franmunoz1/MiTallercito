@@ -141,7 +141,7 @@ footer {
 .btn__link {
   border: 1px solid black;
   border-radius: 10px;
-  width: 170px;
+  padding: 0.5rem 1rem;
   align-self: center;
   background-color: antiquewhite;
   transition: box-shadow 0.5s;
