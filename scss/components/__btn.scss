@@ -7,6 +7,6 @@
     transition: box-shadow 0.5s;
 
     &:hover {
-        box-shadow: 0 0 ($medida-principal - 0.4) #515151;
+        box-shadow: 0 0 ($medida-principal - 0.5) #515151;
     }
 }
