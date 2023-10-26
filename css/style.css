@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -22,7 +23,8 @@ ul li a:hover {
   text-decoration: underline;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
 }
 
@@ -58,12 +60,6 @@ header {
   height: 120px;
 }
 
-@media (min-width: 768px) {
-  .nav-list {
-    display: flex;
-    gap: 20px;
-  }
-}
 footer {
   background-color: antiquewhite;
   padding: 1rem;
@@ -75,11 +71,23 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
+@media (min-width: 768px) {
+  .contenedorfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .contenedorfooter__derechos {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .contenedorfooter__derechos {
+    align-self: center;
+  }
 }
 .contenedorfooter__contacto {
   display: flex;
@@ -108,29 +116,14 @@ footer {
   padding: 0;
 }
 
-@media (min-width: 768px) {
-  .contenedorfooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .contenedorfooter__derechos {
-    align-self: center;
-  }
-}
-.contenedorninos, .contenedormuebles {
-  padding: 1rem;
-}
-
-.contenedorarticulos {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-}
 .contenedorarticulos__articulo {
   padding: 1rem;
   border: 1px solid black;
   border-radius: 8px;
+  transition: box-shadow 0.5s;
+}
+.contenedorarticulos__articulo:hover {
+  box-shadow: 0 0 1rem #515151;
 }
 .contenedorarticulos__articulo .articulo__img {
   width: 100%;
@@ -145,7 +138,30 @@ footer {
   justify-content: space-between;
 }
 
-.titulo_clases {
+.btn__link {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  background-color: antiquewhite;
+  transition: box-shadow 0.5s;
+}
+.btn__link:hover {
+  box-shadow: 0 0 0.5rem #515151;
+}
+
+.contenedorninos,
+.contenedormuebles {
+  padding: 1rem;
+}
+
+.contenedorarticulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.titulo-clases {
   padding: 1rem;
 }
 
@@ -159,6 +175,13 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (min-width: 1200px) {
+  .contenedorclases__seccion {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
 }
 .contenedorclases__seccion img {
   height: 100%;
@@ -180,13 +203,6 @@ footer {
   height: 600px;
   overflow: hidden;
 }
-.seccion__normal .normal__btn {
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 170px;
-  align-self: center;
-  background-color: antiquewhite;
-}
 .seccion__personalizada {
   display: flex;
   flex-direction: column;
@@ -202,24 +218,22 @@ footer {
   height: 600px;
   overflow: hidden;
 }
-.seccion__personalizada .personalizada__btn {
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 170px;
-  align-self: center;
-  background-color: antiquewhite;
-}
 
-@media (min-width: 768px) {
-  .contenedorclases__seccion {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-  }
-}
 .contenedorinicio {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .contenedorinicio {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .contenedorinicio section {
+    width: 50%;
+  }
 }
 .contenedorinicio__presentacion article {
   height: 630px;
@@ -233,14 +247,6 @@ footer {
   gap: 1rem;
   text-align: center;
   padding: 1rem;
-}
-.presentacion__catalogo a {
-  background-color: antiquewhite;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 100px;
-  height: 25px;
-  align-self: center;
 }
 .presentacion__catalogo div {
   height: 600px;
@@ -257,14 +263,6 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-.presentacion__clases a {
-  background-color: antiquewhite;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 100px;
-  height: 25px;
-  align-self: center;
-}
 .presentacion__clases div {
   height: 600px;
   overflow: hidden;
@@ -274,16 +272,6 @@ footer {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  .contenedorinicio {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .contenedorinicio section {
-    width: 50%;
-  }
-}
 .titulo-nosotros {
   padding: 1rem;
 }
@@ -294,21 +282,19 @@ footer {
   flex-direction: column;
   gap: 1rem;
 }
-.seccionnosotros__primero {
+@media (min-width: 768px) {
+  .seccionnosotros {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.seccionnosotros__primero, .seccionnosotros__segundo {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 1rem;
   text-align: center;
 }
-.seccionnosotros__segundo {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 1rem;
-  text-align: center;
-}
-
 .contenedoropiniones {
   padding: 1rem;
 }
@@ -336,17 +322,11 @@ footer {
   align-self: center;
 }
 
-.img-cliente img {
+.img-cliente {
   height: 100px;
   width: 100px;
 }
 
-@media (min-width: 768px) {
-  .seccionnosotros {
-    display: flex;
-    flex-direction: row;
-  }
-}
 .contenedorcontacto {
   padding: 1rem;
 }
@@ -357,8 +337,10 @@ footer {
   background-color: antiquewhite;
   border: 1px solid black;
   color: black;
+  transition: box-shadow 0.5s;
 }
 .contenedorcontacto__formulario .formulario__btn:hover {
+  box-shadow: 0 0 1rem #515151;
   background-color: antiquewhite;
   border: 1px solid black;
   color: black;

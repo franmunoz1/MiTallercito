@@ -1,0 +1,12 @@
+.btn__link {
+    border: 1px solid $color-secundario;
+    border-radius: 10px;
+    padding: ($medida-principal - 0.5) $medida-principal;
+    align-self: center;
+    background-color: $color-principal;
+    transition: box-shadow 0.5s;
+
+    &:hover {
+        box-shadow: 0 0 ($medida-principal - 0.5) #515151;
+    }
+}

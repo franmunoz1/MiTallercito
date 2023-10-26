@@ -1,13 +1,19 @@
-.contenedorcontacto{
+.contenedorcontacto {
     padding: $medida-principal;
-    &__formulario{
+
+    &__formulario {
         padding: $medida-principal;
-        .formulario__btn{
+
+        .formulario__btn {
             background-color: $color-principal;
             border: 1px solid $color-secundario;
             color: $color-secundario;
+            transition: box-shadow 0.5s;
+
         }
-        .formulario__btn:hover{
+
+        .formulario__btn:hover {
+            box-shadow: 0 0 $medida-principal #515151;
             background-color: $color-principal;
             border: 1px solid $color-secundario;
             color: $color-secundario;
