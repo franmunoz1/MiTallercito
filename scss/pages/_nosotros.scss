@@ -43,12 +43,10 @@
         }
 
         .clientes__segunda {
-            display: flex;
-            gap: ($medida-principal * 2);
-            max-height: 400px;
+            @extend .clientes__primera;
 
             .segunda__opinion {
-                align-self: center;
+                @extend .primera__opinion;
             }
         }
     }

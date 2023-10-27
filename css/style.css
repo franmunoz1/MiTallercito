@@ -188,7 +188,7 @@ footer {
   width: 100%;
 }
 
-.seccion__normal {
+.seccion__normal, .seccion__personalizada {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -199,20 +199,9 @@ footer {
   height: 100%;
   width: 100%;
 }
-.seccion__normal div {
+.seccion__normal div, .seccion__personalizada div {
   height: 600px;
   overflow: hidden;
-}
-.seccion__personalizada {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
-  padding: 1rem;
-  border: 1px solid black;
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
 }
 .seccion__personalizada div {
   height: 600px;
@@ -241,27 +230,20 @@ footer {
   margin-bottom: 30px;
 }
 
-.presentacion__catalogo {
+.presentacion__catalogo, .presentacion__clases {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   text-align: center;
   padding: 1rem;
 }
-.presentacion__catalogo div {
+.presentacion__catalogo div, .presentacion__clases div {
   height: 600px;
   overflow: hidden;
 }
-.presentacion__catalogo img {
+.presentacion__catalogo img, .presentacion__clases img {
   height: 100%;
   width: 100%;
-}
-.presentacion__clases {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  text-align: center;
-  padding: 1rem;
 }
 .presentacion__clases div {
   height: 600px;
@@ -305,23 +287,14 @@ footer {
   gap: 2rem;
   padding: 2rem;
 }
-.contenedoropiniones__clientes .clientes__primera {
+.contenedoropiniones__clientes .clientes__primera, .contenedoropiniones__clientes .clientes__segunda {
   display: flex;
   gap: 2rem;
   max-height: 400px;
 }
-.contenedoropiniones__clientes .clientes__primera .primera__opinion {
+.contenedoropiniones__clientes .clientes__primera .primera__opinion, .contenedoropiniones__clientes .clientes__segunda .primera__opinion, .contenedoropiniones__clientes .clientes__segunda .segunda__opinion {
   align-self: center;
 }
-.contenedoropiniones__clientes .clientes__segunda {
-  display: flex;
-  gap: 2rem;
-  max-height: 400px;
-}
-.contenedoropiniones__clientes .clientes__segunda .segunda__opinion {
-  align-self: center;
-}
-
 .img-cliente {
   height: 100px;
   width: 100px;

@@ -41,14 +41,7 @@
     }
 
     &__personalizada {
-        @include flexbox(column);
-        text-align: center;
-        gap: $medida-principal;
-        padding: $medida-principal;
-        border: 1px solid $color-secundario;
-        border-radius: 10px;
-        height: 100%;
-        width: 100%;
+        @extend .seccion__normal;
 
         div {
             height: 600px;
