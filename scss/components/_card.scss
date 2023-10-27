@@ -5,7 +5,7 @@
     transition: box-shadow 0.5s;
 
     &:hover {
-        box-shadow: 0 0 $medida-principal #515151;
+        box-shadow: 0 0 $medida-principal $color-sombra;
     }
 
     .articulo__img {

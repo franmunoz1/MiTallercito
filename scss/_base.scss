@@ -3,6 +3,9 @@ $fuente-principal: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Rob
 $color-principal: antiquewhite;
 $color-secundario: black;
 
+//color de sombras
+$color-sombra: #515151;
+
 $medida-principal: 1rem;
 
 * {
@@ -54,6 +57,7 @@ img {
 }
 
 // Mixin de flex con row y columns
+
 @mixin flexbox($formato) {
     display: flex;
     flex-direction: $formato;
