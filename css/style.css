@@ -47,7 +47,7 @@ header {
 }
 .navbar-brand:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 0.5rem #515151;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
 }
 
 .nav-item a {

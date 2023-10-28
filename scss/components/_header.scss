@@ -16,7 +16,7 @@ header {
 
         &:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 ($medida-principal - 0.5) $color-sombra;
+            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 35%);
         }
     }
 }
