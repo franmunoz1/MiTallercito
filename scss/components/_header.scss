@@ -10,6 +10,23 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: $color-principal;
+
+    &-brand {
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 ($medida-principal - 0.5) $color-sombra;
+        }
+    }
+}
+
+.nav-item a {
+    transition: all 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .barra-navegacion {

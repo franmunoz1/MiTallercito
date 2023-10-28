@@ -19,10 +19,6 @@ a {
   color: black;
 }
 
-ul li a:hover {
-  text-decoration: underline;
-}
-
 img,
 video {
   max-width: 100%;
@@ -45,6 +41,20 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: antiquewhite;
+}
+.navbar-brand {
+  transition: all 0.5s;
+}
+.navbar-brand:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.5rem #515151;
+}
+
+.nav-item a {
+  transition: all 0.5s;
+}
+.nav-item a:hover {
+  transform: scale(1.2);
 }
 
 .barra-navegacion {
@@ -120,16 +130,23 @@ footer {
   padding: 1rem;
   border: 1px solid black;
   border-radius: 8px;
-  transition: box-shadow 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 .contenedorarticulos__articulo:hover {
   box-shadow: 0 0 1rem #515151;
+}
+.contenedorarticulos__articulo:hover img {
+  transform: scale(1.2);
 }
 .contenedorarticulos__articulo .articulo__img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   overflow: hidden;
+}
+.contenedorarticulos__articulo .articulo__img img {
+  transition: all 0.5s;
 }
 .contenedorarticulos__articulo .articulo__precio {
   padding-top: 0.5rem;

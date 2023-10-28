@@ -2,10 +2,15 @@
     padding: $medida-principal;
     border: 1px solid $color-secundario;
     border-radius: 8px;
-    transition: box-shadow 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
 
     &:hover {
         box-shadow: 0 0 $medida-principal $color-sombra;
+
+        img {
+            transform: scale(1.2);
+        }
     }
 
     .articulo__img {
@@ -13,6 +18,10 @@
         height: 200px;
         object-fit: cover;
         overflow: hidden;
+
+        img {
+            transition: all 0.5s
+        }
     }
 
     .articulo__precio {
