@@ -42,13 +42,6 @@ header {
   align-items: center;
   background-color: antiquewhite;
 }
-.navbar-brand {
-  transition: all 0.5s;
-}
-.navbar-brand:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
-}
 
 .nav-item a {
   transition: all 0.5s;
@@ -65,9 +58,13 @@ header {
   text-align: right;
 }
 
-.icono {
-  width: 120px;
-  height: 120px;
+.iconoHeader img {
+  width: 150px;
+  height: 150px;
+  transition: all 0.5s;
+}
+.iconoHeader img:hover {
+  transform: scale(1.2);
 }
 
 footer {
