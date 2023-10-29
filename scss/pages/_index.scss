@@ -40,10 +40,7 @@
     }
 
     &__clases {
-        @include flexbox(column);
-        gap: $medida-principal;
-        text-align: center;
-        padding: $medida-principal;
+        @extend .presentacion__catalogo;
 
         div {
             height: 600px;

@@ -13,7 +13,7 @@
         }
 
         .formulario__btn:hover {
-            box-shadow: 0 0 $medida-principal #515151;
+            box-shadow: 0 0 $medida-principal $color-sombra;
             background-color: $color-principal;
             border: 1px solid $color-secundario;
             color: $color-secundario;
