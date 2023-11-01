@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 ul,
@@ -31,8 +32,6 @@ img {
 header {
   background-color: antiquewhite;
   padding: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .navbar {
