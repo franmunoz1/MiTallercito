@@ -11,11 +11,14 @@ header {
 }
 
 .nav-item a {
-    transition: all 0.5s;
+    @include mq-tablet {
+        transition: all 0.5s;
 
-    &:hover {
-        transform: scale(1.2);
+        &:hover {
+            transform: scale(1.2);
+        }
     }
+
 }
 
 .barra-navegacion {
