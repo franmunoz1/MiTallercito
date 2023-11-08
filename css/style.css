@@ -165,6 +165,7 @@ footer {
 }
 
 .tituloprincipal {
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
   color: antiquewhite;
@@ -306,6 +307,19 @@ footer {
   width: 100%;
 }
 
+.scale-up-center {
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .titulo-nosotros {
   padding: 1rem;
 }
