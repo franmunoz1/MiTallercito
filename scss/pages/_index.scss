@@ -33,6 +33,10 @@
             overflow: hidden;
         }
 
+        &-img {
+            max-height: 600px;
+        }
+
         img {
             height: 100%;
             width: 100%;
@@ -45,6 +49,10 @@
         div {
             height: 600px;
             overflow: hidden;
+        }
+
+        &-img {
+            max-height: 600px;
         }
 
         img {
