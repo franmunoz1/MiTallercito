@@ -8,3 +8,10 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: $medida-principal;
 }
+
+.contenedorcatalogo {
+    text-align: center;
+    padding: ($medida-principal - 0.5);
+    color: antiquewhite;
+    text-shadow: 1px 1px 2px black;
+}
