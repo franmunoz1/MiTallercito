@@ -255,6 +255,9 @@ footer {
   height: 500px;
   overflow: hidden;
 }
+.presentacion__catalogo-img {
+  max-height: 600px;
+}
 .presentacion__catalogo img, .presentacion__clases img {
   height: 100%;
   width: 100%;
@@ -262,6 +265,9 @@ footer {
 .presentacion__clases div {
   height: 600px;
   overflow: hidden;
+}
+.presentacion__clases-img {
+  max-height: 600px;
 }
 .presentacion__clases img {
   height: 100%;
