@@ -40,7 +40,7 @@ footer {
 
     &__redes {
         @include flexbox(column);
-        gap: 1rem;
+        gap: $medida-principal;
         justify-content: space-around;
 
         .redes__lista {
