@@ -122,6 +122,12 @@ footer {
   margin: 0;
   padding: 0;
 }
+.contenedorfooter__redes .redes__lista li {
+  transition: box-shadow 0.5s;
+}
+.contenedorfooter__redes .redes__lista li:hover {
+  box-shadow: 0 0 0.2rem #515151;
+}
 
 .contenedorarticulos__articulo {
   padding: 1rem;
